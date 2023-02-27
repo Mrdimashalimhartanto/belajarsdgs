@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-footer {
+  background-image: url("../images/bg-footer2.jpg");
+}

@@ -11,37 +11,11 @@ import {
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 
-const solutions = [
-  {
-    name: "Inbox",
-    description:
-      "Get a better understanding of where your traffic is coming from.",
-    href: "#",
-    icon: InboxIcon,
-  },
-  {
-    name: "Messaging",
-    description: "Speak directly to your customers in a more meaningful way.",
-    href: "#",
-    icon: AnnotationIcon,
-  },
-  {
-    name: "Live Chat",
-    description: "Your customers' data will be safe and secure.",
-    href: "#",
-    icon: ChatAlt2Icon,
-  },
-  {
-    name: "Knowledge Base",
-    description: "Connect with third-party tools that you're already using.",
-    href: "#",
-    icon: QuestionMarkCircleIcon,
-  },
-];
 const navigation = [
-  { name: "Pricing", href: "#" },
-  { name: "Partners", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Beranda", href: "#" },
+  { name: "Tentang Kelompok Kami", href: "#" },
+  //   { name: "", href: "#" },
+  //   { name: "Company", href: "#" },
 ];
 
 function classNames(...classes) {
@@ -50,9 +24,9 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <div className="bg-white">
+    <div className="bg-gradient-to-r from-hijau via-kuning to-kuning">
       <header>
-        <Popover className="relative bg-white">
+        <Popover className="relative bg-gradient-to-r from-hijau via-kuning to-kuning">
           <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <a href="#">
@@ -74,7 +48,7 @@ export default function Header() {
               <Popover className="relative">
                 {({ open }) => (
                   <>
-                    <Popover.Button
+                    {/* <Popover.Button
                       className={classNames(
                         open ? "text-gray-900" : "text-gray-500",
                         "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -87,7 +61,7 @@ export default function Header() {
                         )}
                         aria-hidden="true"
                       />
-                    </Popover.Button>
+                    </Popover.Button> */}
 
                     <Transition
                       as={Fragment}
@@ -99,7 +73,7 @@ export default function Header() {
                       leaveTo="opacity-0 translate-y-1">
                       <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                          <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+                          {/* <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
                             {solutions.map((item) => (
                               <a
                                 key={item.name}
@@ -121,7 +95,7 @@ export default function Header() {
                                 </div>
                               </a>
                             ))}
-                          </div>
+                          </div> */}
                         </div>
                       </Popover.Panel>
                     </Transition>
@@ -133,21 +107,21 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  className="text-base font-bold text-black hover:text-white">
                   {item.name}
                 </a>
               ))}
             </Popover.Group>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <a
+              {/* <a
                 href="#"
                 className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
                 Sign in
-              </a>
+              </a> */}
               <a
                 href="#"
-                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-                Sign up
+                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-bold text-white bg-hijau hover:bg-indigo-700">
+                Masuk
               </a>
             </div>
           </div>
@@ -181,7 +155,7 @@ export default function Header() {
                     </div>
                   </div>
                   <div className="mt-6">
-                    <nav className="grid grid-cols-1 gap-7">
+                    {/* <nav className="grid grid-cols-1 gap-7">
                       {solutions.map((item) => (
                         <a
                           key={item.name}
@@ -195,7 +169,7 @@ export default function Header() {
                           </div>
                         </a>
                       ))}
-                    </nav>
+                    </nav> */}
                   </div>
                 </div>
                 <div className="py-6 px-5">
@@ -244,7 +218,9 @@ export default function Header() {
                   />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                  <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                  <h1
+                    className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
+                    data-aos="fade-left">
                     <span className="block text-white">
                       Selamat datang di kelompok kami
                     </span>
@@ -252,12 +228,14 @@ export default function Header() {
                       Kami akan membahas materi yaitu SDGS
                     </span>
                   </h1>
-                  <p className="mt-6 max-w-lg mx-auto text-center text-xl text-white sm:max-w-3xl">
+                  <p
+                    className="mt-6 max-w-lg mx-auto text-center text-xl text-white sm:max-w-3xl"
+                    data-aos="fade-up-right">
                     hallo, salam kenal dari kelompok kami, kami akan membahas
                     sebuah materi tentang SDGS.
                   </p>
                   <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                    <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+                    {/* <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
                       <a
                         href="#"
                         className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-black bg-yellow-400 hover:bg-indigo-50 sm:px-8">
@@ -268,7 +246,7 @@ export default function Header() {
                         className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-opacity-70 sm:px-8">
                         Baca Dulu deh
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -278,10 +256,10 @@ export default function Header() {
           {/* Logo cloud */}
           <div className="bg-gray-100">
             <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-              <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
-                Trusted by over 5 very average small businesses
+              <p className="text-center text-sm font-bold text-black tracking-wide">
+                Di buat oleh Ananda Aulia Hana dan Kelompok
               </p>
-              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+              {/* <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                   <img
                     className="h-12"
@@ -317,7 +295,7 @@ export default function Header() {
                     alt="Workcation"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

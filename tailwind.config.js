@@ -9,7 +9,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "background-footer": "url('../images/bg-footer.jpg')",
+      },
+      colors: {
+        hijau: "#009900",
+        kuning: "#fefb15",
+      },
+    },
   },
   plugins: [],
 };

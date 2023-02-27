@@ -13,13 +13,17 @@ export default function Feature() {
       </div>
       <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="md:ml-auto md:w-1/2 md:pl-10">
-          <h2 className="text-base font-semibold uppercase tracking-wider text-gray-300">
+          <h2
+            className="text-base font-semibold uppercase tracking-wider text-gray-300"
+            data-aos="fade-down">
             materi SDGS
           </h2>
-          <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
+          <p
+            className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl"
+            data-aos="fade-up">
             My self introduction
           </p>
-          <p className="mt-3 text-lg text-white">
+          <p className="mt-3 text-lg text-white" data-aos="fade-right">
             Hallo teman - teman perkenalkan aku Ananda Aulia Hana absensi no 2.
             aku sekolah di SMAN 71 Jakarta Aku kelas X E disini aku berperan
             sebagai desain grafis di kelompok kami.

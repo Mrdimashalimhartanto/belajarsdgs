@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { InboxIcon, SparklesIcon } from "@heroicons/react/outline";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
 export default function Content() {
   return (
@@ -9,18 +10,27 @@ export default function Content() {
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
               <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
-                  <InboxIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
+                <span
+                  className="h-12 w-12 rounded-md flex items-center justify-center"
+                  data-aos="fade-down">
+                  <Player
+                    autoplay
+                    speed={1.5}
+                    loop
+                    className=""
+                    src="https://assets9.lottiefiles.com/private_files/lf30_of1c2696.json"
+                    style={{ height: "90px", width: "90px" }}></Player>
                 </span>
               </div>
               <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                <h2
+                  className="text-3xl font-extrabold tracking-tight text-gray-900"
+                  data-aos="fade-right">
                   Apa itu SDGS
                 </h2>
-                <p className="mt-4 text-lg text-gray-500">
+                <p
+                  className="mt-4 text-lg text-gray-500"
+                  data-aos="fade-up-left">
                   SDGS merupakan Sistem Development Goals yang merupakan suatu
                   rencana aksi global. SDGS disepakati oleh para pemimpin dunia,
                   termasuk Indonesia.guna mengakhiri kemiskinan, mengurangi
@@ -36,6 +46,7 @@ export default function Content() {
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 src="https://www.ecoedu.id/wp-content/uploads/2022/09/Ecoedu.id-SDGs-Indonesia.jpg"
                 alt="Inbox user interface"
+                data-aos="fade-left"
               />
             </div>
           </div>
@@ -46,18 +57,25 @@ export default function Content() {
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
             <div>
               <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
-                  <SparklesIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
+                <span
+                  className="h-12 w-12 rounded-md flex items-center justify-center"
+                  data-aos="fade-right">
+                  <Player
+                    autoplay
+                    speed={1.5}
+                    loop
+                    className=""
+                    src="https://assets5.lottiefiles.com/packages/lf20_mm78f6k0.json"
+                    style={{ height: "90px", width: "90px" }}></Player>
                 </span>
               </div>
               <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                <h2
+                  className="text-3xl font-extrabold tracking-tight text-gray-900"
+                  data-aos="fade-up">
                   Pembahasan lanjutan SDGS
                 </h2>
-                <p className="mt-4 text-lg text-gray-500">
+                <p className="mt-4 text-lg text-gray-500" data-aos="fade-down">
                   SDGS berlaku bagi seluruh negara(universal) sehingga seluruh
                   negara tanda terkecuali negara maju memiliki kewajiban moral
                   untuk mencapai tujugan dan target SDGS .
